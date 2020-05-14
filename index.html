@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Characters</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__logo-container"><div class="navbar__logo"></div></div>
+      <div class="navbar__filter-container">
+        <input
+          type="text"
+          name="filter"
+          class="navbar__filter"
+          placeholder="Filter Characters"
+        />
+      </div>
+    </nav>
+
+    <div class="video">
+      <video autoplay muted loop class="video__textcrawl">
+        <source src="./assets/video/Starwarscrawl.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <section class="content"></section>
+    <div class="modal">
+      <div class="modal__box">
+        <h2 class="modal__char-name"></h2>
+        <div class="modal__info-container">
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Height</p>
+            <p class="modal__info" id="height"></p>
+          </div>
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Mass</p>
+            <p class="modal__info" id="mass"></p>
+          </div>
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Hair color</p>
+            <p class="modal__info" id="hair"></p>
+          </div>
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Skin color</p>
+            <p class="modal__info" id="skin"></p>
+          </div>
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Eye color</p>
+            <p class="modal__info" id="eye"></p>
+          </div>
+          <div class="modal__info-box">
+            <p class="modal__info-headline">Gender</p>
+            <p class="modal__info" id="gender"></p>
+          </div>
+          <button class="modal__btn">Close</button>
+        </div>
+      </div>
+    </div>
+    <script async defer src="assets/javascript/js.js"></script>
+  </body>
+</html>
